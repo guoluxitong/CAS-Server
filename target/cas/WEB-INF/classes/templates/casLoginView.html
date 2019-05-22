@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <title th:text="#{cas.login.pagetitle}"></title>
+</head>
+
+<body class="login">
+<main role="main" class="container mt-3 mb-3" >
+    <div layout:fragment="content" class="row" style="width: 600px;margin: auto;background: #ffffff;border-radius:5px">
+        <div class="col-md">
+            <div th:replace="fragments/loginform :: loginform"><a href="fragments/loginform.html">Login Form goes
+                here</a></div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
